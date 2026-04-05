@@ -49,15 +49,6 @@ def post_issue(owner: str, repo: str, request: IssueCreateRequest):
         raise HTTPException(status_code=e.status_code, detail=e.details)
 
 
-@router.get("/oauth/my-repos")
-def get_my_repos_oauth(authorization: str = Header(...)):
-    try:
-        token = authorization.split(" ")[1]
-        return fetch_my_repos_with_token(token)
-    except IndexError:
-        raise HTTPException(status_code=401, detail="Invalid Authorization header format")
-    except GitHubAPIError as e:
-        raise HTTPException(status_code=e.status_code, detail=e.details)
 
 @router.get("/branches/{owner}/{repo}")
 def get_branches(owner: str, repo: str):
