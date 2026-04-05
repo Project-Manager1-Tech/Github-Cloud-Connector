@@ -24,15 +24,7 @@ def fetch_my_repos():
     return handle_github_response(res)
 
 
-def fetch_my_repos_with_token(token: str):
-    headers = {
-        **DEFAULT_HEADERS,
-        "Authorization": f"Bearer {token}"
-    }
 
-    url = f"{GITHUB_API_BASE}/user/repos"
-    res = requests.get(url, headers=headers)
-    return handle_github_response(res)
 
 
 def list_issues(owner: str, repo: str):
