@@ -111,39 +111,6 @@ github-connector/
 │── README.md
 
 
-github-connector/
-│── app/
-│ │── main.py
-│ │── config.py
-│ │
-│ ├── routes/
-│ │ ├── github_routes.py
-│ │ ├── auth_routes.py
-│ │ └── device_auth_routes.py
-│ │
-│ ├── services/
-│ │ ├── github_service.py
-│ │ ├── oauth_service.py
-│ │ └── device_flow_service.py
-│ │
-│ ├── schemas/
-│ │ ├── issue_schema.py
-│ │ └── pr_schema.py
-│ │
-│ └── utils/
-│ ├── github_exceptions.py
-│ └── github_response_handler.py
-│
-│── tests/
-│ └── test_health.py
-│
-│── .env
-│── .gitignore
-│── requirements.txt
-│── requirements-dev.txt
-│── README.md
-
-
 
 ## Setup Instructions
 
@@ -169,5 +136,13 @@ GITHUB_TOKEN=ghp_your_personal_access_token
 
 6. Run :
  python -m uvicorn app.main:app --reload
+
+The service will run at:
+
+http://127.0.0.1:8000
+
+Swagger UI (API documentation & testing):
+
+http://127.0.0.1:8000/docs
 
 
