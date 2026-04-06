@@ -79,6 +79,7 @@ This connector exposes REST endpoints to perform GitHub actions such as fetching
 ---
 
 ## Project Structure
+```
 github-connector/
 │── app/
 │   │── main.py
@@ -104,7 +105,7 @@ github-connector/
 │── .gitignore
 │── requirements.txt
 │── README.md
-
+```
 
 
 ## Setup Instructions
