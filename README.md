@@ -81,33 +81,28 @@ This connector exposes REST endpoints to perform GitHub actions such as fetching
 ## Project Structure
 github-connector/
 │── app/
-│ │── main.py
-│ │── config.py
-│ │
-│ ├── routes/
-│ │ ├── github_routes.py
-│ │ ├── auth_routes.py
-│ │ 
-│ │
-│ ├── services/
-│ │ ├── github_service.py
-│ │ ├── oauth_service.py
-│ │ 
-│ │
-│ ├── schemas/
-│ │ ├── issue_schema.py
-│ │ └── pr_schema.py
-│ │
-│ └── utils/
-│ ├── github_exceptions.py
-│ └── github_response_handler.py
-│
-│
+│   │── main.py
+│   │── config.py
+│   │
+│   ├── routes/
+│   │   ├── github_routes.py
+│   │   ├── auth_routes.py
+│   │
+│   ├── services/
+│   │   ├── github_service.py
+│   │   ├── oauth_service.py
+│   │
+│   ├── schemas/
+│   │   ├── issue_schema.py
+│   │   ├── pr_schema.py
+│   │
+│   └── utils/
+│       ├── github_exceptions.py
+│       ├── github_response_handler.py
 │
 │── .env
 │── .gitignore
 │── requirements.txt
-│
 │── README.md
 
 
