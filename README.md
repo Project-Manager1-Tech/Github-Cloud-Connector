@@ -143,7 +143,11 @@ http://127.0.0.1:8000
 
 Swagger UI (API documentation & testing):
 
-http://127.0.0.1:8000/docs
+http://127.0.0.1:8000/docs- In it api endpoints are mentioned and application is on localhost so if you want to check the endpoints working or not type
+http://127.0.0.1:8000/  and after it mention endpoints.
+
+This is a MVP of the backend server it is still in progress of improvements.
+
 
 Demo Video Link:
 https://drive.google.com/file/d/14q-YcEyVx8PLUXUC4m36F5VB25GrWEkS/view?usp=sharing
