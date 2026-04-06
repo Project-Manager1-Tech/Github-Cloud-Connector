@@ -145,4 +145,5 @@ Swagger UI (API documentation & testing):
 
 http://127.0.0.1:8000/docs
 
-
+Demo Video Link:
+https://drive.google.com/file/d/14q-YcEyVx8PLUXUC4m36F5VB25GrWEkS/view?usp=sharing
